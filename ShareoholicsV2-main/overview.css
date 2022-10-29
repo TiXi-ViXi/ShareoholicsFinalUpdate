@@ -24,7 +24,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 19px;
     background-color: #888888;
   }
   
@@ -83,11 +83,11 @@ body {
 .btn-shine{
   padding: 12px 48px;
   color: #ffffff;
-  background: linear-gradient(to right, #ffffff 0, rgb(22, 22, 22) 10%, #b3b3b3 80%);
+  background: linear-gradient(to right, #ffffff 0, rgb(22, 22, 22) 10%, #b3b3b3 100%);
    background-position: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 4s infinite linear;
+  animation: shine 15s infinite linear;
   animation-fill-mode: forwards;
   -webkit-text-size-adjust: none;
   font-weight: 600;
@@ -98,12 +98,37 @@ body {
   0%{
     background-position: 0;
   }
-  60%{
-    background-position: 240px;
+  10%{
+    background-position: 100px;
   }
+  20%{
+    background-position: 200px;
+  }
+  30%{
+    background-position: 300px;
+  }
+  40%{
+    background-position: 400px;
+  }
+  50%{
+    background-position: 500px;
+  }
+  60%{
+    background-position: 600px;
+  }
+  70%{
+    background-position: 700px;
+  }
+  80%{
+    background-position: 800px;
+  }
+  90%{
+    background-position: 900px;
+  }
+  
   100%{
 
-    background-position: 240px;
+    background-position: 1000px;
   }
 }
 
@@ -280,7 +305,7 @@ nav ul li a {}
 }
 
 .FourthPartBox {
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     height: 85%;
     margin-top: 5%;
     border-radius: 20px;
@@ -288,6 +313,7 @@ nav ul li a {}
     width: 90%;
     overflow: hidden;
 }
+
 
 .FourthPartHeading {
     margin-top: 6%;
@@ -500,10 +526,10 @@ nav ul li a {}
     display: grid;
     padding: 2rem;
     grid-template-columns: 300px 1fr;
-    gap: 1rem;
+    gap: 2.5rem;
     align-items: center;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 10 auto;
     font: 500 100%/1.5 system-ui;
   }
   .img {
@@ -520,9 +546,17 @@ nav ul li a {}
 
 
 
-@media only screen and (max-width: 1368px) {
+  @media only screen and (max-width: 1368px) {
     body{
-        font-size: 10px;
+        font-size: 13px;
+    }
+    .Lock{
+        margin-top: -10%;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    body{
+        font-size: 17px;
     }
 }
 
